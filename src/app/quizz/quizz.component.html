@@ -1,0 +1,26 @@
+<div class="px-5 py-2 mt-3 quizzContainer">
+  <div class="text-center">
+    <h1>Exerce-toi !</h1>
+    <p>Il n'y a qu'une seule bonne réponse</p>
+  </div>
+
+  <div
+    *ngFor="let question of questions"
+    class="bg-white mt-5 rounded container"
+  >
+    <div class="row">
+      <h2 class="p-3 text-center">{{ question.question_text }}</h2>
+    </div>
+    <div class="row text-center justify-content-center px-4 py-3">
+      <div
+        *ngFor="let answer of question.answers"
+        class="p-3 m-2 border rounded col-5 reponse question_{{ question.id }}"
+        (click)="
+          getAnswer($event, question.correctAnswerId, answer.id, question.id)
+        "
+      >
+        {{ answer.answer_text }}
+      </div>
+    </div>
+  </div>
+</div>

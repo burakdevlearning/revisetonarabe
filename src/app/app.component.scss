@@ -1,0 +1,10 @@
+@media (width > 767px) {
+    div{
+        flex-direction: row !important;
+    }
+
+    div:last-child {
+        flex-grow: 1;
+    }
+}
+

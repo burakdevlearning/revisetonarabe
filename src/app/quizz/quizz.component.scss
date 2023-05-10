@@ -1,0 +1,40 @@
+@media (width < 767px) {
+    .container{
+        max-width: 600px;
+    }
+}
+
+.reponse:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.bg-correct, .bg-correct:hover{
+    background-color: #defff3;
+}
+
+.bg-incorrect, .bg-incorrect:hover{
+    background-color: #ffbfbf;
+}
+h2{
+    background-color: #2B9A76;
+    color: white;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+
+
+@media (width > 767px) {
+    .quizzContainer{
+        margin-left: 1rem;
+        padding-inline: 1.5rem !important;
+    }
+}
+
+@media (width > 992px) {
+    .quizzContainer{
+        margin-left: 1rem;
+        padding-inline: 3rem !important;
+    }
+}

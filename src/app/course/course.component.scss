@@ -1,0 +1,66 @@
+@media (width < 768px) {
+    .container{
+        max-width: 600px;
+    }
+}
+
+:host {
+    flex-grow: 1;
+}
+
+.row{
+    border-bottom: 1px solid #eee;
+
+}
+
+.words > div{
+    background-color: white;
+}
+
+.title > div{
+        font-size: 1.1rem;
+    padding: 1rem;
+    background-color: #2B9A76;
+    color:white
+}
+.title > div:first-of-type{
+    border-top-left-radius: 0.25rem;
+}
+
+.title > div:last-of-type{
+    border-top-right-radius: 0.25rem;
+}
+
+
+.arabic{
+    font-family: 'Scheherazade New', serif;
+    font-size: 2rem !important;
+}
+
+
+@media (width > 767px) {
+    .courseContainer{
+        margin-left: 1rem;
+        padding-inline: 1.5rem !important;
+    }
+}
+@media (width > 992px) {
+    .courseContainer{
+        margin-left: 1rem;
+        padding-inline: 3rem !important;
+    }
+
+    .title > div{
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+
+    .words > div{
+        background-color: white;
+        padding:1.5rem;
+        padding-inline:  3rem;
+        font-size: 1.3rem;
+    }
+
+  
+}

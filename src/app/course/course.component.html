@@ -1,0 +1,19 @@
+<div class="p-2 mt-3 courseContainer">
+  <div class="text-center">
+    <h1>Vocabulaire du livre d'arabe 1</h1>
+    <p>Révise ton cours</p>
+  </div>
+
+  <div class="container text-center">
+    <div class="row title">
+      <div class="col-4">Pluriel</div>
+      <div class="col-4">Singulier</div>
+      <div class="col-4">Français</div>
+    </div>
+    <div class="row words" *ngFor="let vocab of vocabularies">
+      <div class="col-4 arabic">{{ vocab.plural_arabic }}</div>
+      <div class="col-4 arabic">{{ vocab.singular_arabic }}</div>
+      <div class="col-4">{{ vocab.translation_french }}</div>
+    </div>
+  </div>
+</div>
